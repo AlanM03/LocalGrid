@@ -20,6 +20,8 @@ dependencies = [
     "tiktoken",
     "httpx",
     "transformers",
+    "protobuf",
+    "sentencepiece"
 ]
 
 [project.optional-dependencies]

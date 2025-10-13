@@ -16,8 +16,6 @@ class LocalGrid:
             "aya",
             "codellama",
             "codestral",
-            "command-r",
-            "dbrx",
             "deepseek",
             "falcon",
             "gemma",
@@ -25,10 +23,8 @@ class LocalGrid:
             "llama",
             "mistral",
             "mixtral",
-            "olmo",
             "phi",
             "qwen",
-            "solar",
             "starcoder",
             "yi"
         }
