@@ -50,6 +50,33 @@ def test_get_model_token_limit(grid_instance, model_name, expected_limit):
     # Make sure the function returns the right context size for every case.
     assert grid_instance.get_model_token_limit(model_name) == expected_limit
 
+@pytest.mark.parametrize("model_family", [
+    "codellama",
+    "codestral",
+    "deepseek",
+    "falcon",
+    "gemma",
+    "granite",
+    "llama",
+    "mistral",
+    "phi",
+    "qwen",
+    "starcoder",
+    "yi",
+])
+def test_selects_correct_hf_tokenizer_family(mocker, grid_instance, model_family):
+    # Make sure the code tries to load a Hugging Face tokenizer for known families.
+    mock_from_pretrained = mocker.patch('localgrid.core.AutoTokenizer.from_pretrained')
+    mocker.patch('os.path.exists', return_value=True) # Pretend the tokenizer folder exists
+
+    grid_instance.count_tokens("some text", model_name=f"{model_family}:latest")
+
+    # Check that it tried to load a tokenizer from the correct directory.
+    # We get the path it was called with and make sure the family name is in it.
+    call_args, _ = mock_from_pretrained.call_args
+    tokenizer_path = call_args[0]
+    assert f"tokenizers/{model_family}" in tokenizer_path
+
 # 2. Tests for count_tokens()
 def test_count_tokens_uses_hf_tokenizer(mocker, grid_instance):
     # Create a fake tokenizer that acts like a real Hugging Face one.
