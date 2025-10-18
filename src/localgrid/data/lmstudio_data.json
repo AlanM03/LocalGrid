@@ -1,0 +1,290 @@
+[
+    {
+        "parent_model": "nousresearch/hermes-4-70b",
+        "tokenizer_family": "llama",
+        "size": "70B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-120b",
+        "tokenizer_family": "gpt-oss",
+        "size": "120B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b-thinking-2507",
+        "tokenizer_family": "qwen3",
+        "size": "4B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-20b",
+        "tokenizer_family": "gpt-oss",
+        "size": "20B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "ibm/granite-4-h-tiny",
+        "tokenizer_family": "granitehybrid",
+        "size": "7B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-coder-30b",
+        "tokenizer_family": "qwen3moe",
+        "size": "30B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b-2507",
+        "tokenizer_family": "qwen3",
+        "size": "4B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-30b-a3b-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "30B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-32b",
+        "tokenizer_family": "qwen3",
+        "size": "32B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "mistralai/magistral-small-2509",
+        "tokenizer_family": "mistral",
+        "size": "24B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-235b-a22b",
+        "tokenizer_family": "qwen3moe",
+        "size": "235B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-reasoning-plus",
+        "tokenizer_family": "phi-4",
+        "size": "14.7B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-mini-reasoning",
+        "tokenizer_family": "phi-4",
+        "size": "3.8B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-next-80b",
+        "tokenizer_family": "qwen3_next",
+        "size": "80B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "bytedance/seed-oss-36b",
+        "tokenizer_family": "seed_oss",
+        "size": "36B",
+        "context": "512K"
+    },
+    {
+        "parent_model": "qwen/qwen3-30b-a3b",
+        "tokenizer_family": "qwen3moe",
+        "size": "30B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "qwen/qwen2.5-coder-14b",
+        "tokenizer_family": "qwen2",
+        "size": "14B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "mistralai/mistral-nemo-instruct-2407",
+        "tokenizer_family": "mistral",
+        "size": "12B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen2.5-coder-32b",
+        "tokenizer_family": "qwen2",
+        "size": "32B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "mistralai/mistral-7b-instruct-v0.3",
+        "tokenizer_family": "mistral",
+        "size": "7B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "mistralai/codestral-22b-v0.1",
+        "tokenizer_family": "mistral",
+        "size": "22B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "google/gemma-2-9b",
+        "tokenizer_family": "gemma2",
+        "size": "9B",
+        "context": "8K"
+    },
+    {
+        "parent_model": "google/gemma-2-27b",
+        "tokenizer_family": "gemma2",
+        "size": "27B",
+        "context": "8K"
+    },
+    {
+        "parent_model": "mistralai/mathstral-7b-v0.1",
+        "tokenizer_family": "mistral",
+        "size": "14B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "microsoft/phi-4",
+        "tokenizer_family": "phi",
+        "size": "14B",
+        "context": "16K"
+    },
+    {
+        "parent_model": "qwen/qwq-32b",
+        "tokenizer_family": "qwen2",
+        "size": "32B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "qwen/qwen2.5-vl-7b",
+        "tokenizer_family": "qwen2vl",
+        "size": "7B",
+        "context": "125K"
+    },
+    {
+        "parent_model": "ibm/granite-3.1-8b",
+        "tokenizer_family": "granite",
+        "size": "8B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "google/gemma-3-1b",
+        "tokenizer_family": "gemma3",
+        "size": "1B",
+        "context": "N/A"
+    },
+    {
+        "parent_model": "ibm/granite-3.2-8b",
+        "tokenizer_family": "granite",
+        "size": "8B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "google/gemma-3-4b",
+        "tokenizer_family": "gemma3",
+        "size": "4B",
+        "context": "4K"
+    },
+    {
+        "parent_model": "meta/llama-3.3-70b",
+        "tokenizer_family": "llama",
+        "size": "70B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "google/gemma-3-12b",
+        "tokenizer_family": "gemma3",
+        "size": "12B",
+        "context": "4K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-0528-qwen3-8b",
+        "tokenizer_family": "qwen3",
+        "size": "8B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-1.7b",
+        "tokenizer_family": "qwen3",
+        "size": "2B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "google/gemma-3-27b",
+        "tokenizer_family": "gemma3",
+        "size": "27B",
+        "context": "125K"
+    },
+    {
+        "parent_model": "qwen/qwen3-14b",
+        "tokenizer_family": "qwen3",
+        "size": "14B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "mistralai/devstral-small-2505",
+        "tokenizer_family": "mistral",
+        "size": "23.6B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-8b",
+        "tokenizer_family": "qwen3",
+        "size": "8B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b",
+        "tokenizer_family": "qwen3",
+        "size": "4B",
+        "context": "40K"
+    },
+    {
+        "parent_model": "mistralai/devstral-small-2507",
+        "tokenizer_family": "mistral",
+        "size": "24B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "mistralai/magistral-small",
+        "tokenizer_family": "mistral",
+        "size": "23.6B",
+        "context": "48K"
+    },
+    {
+        "parent_model": "baidu/ernie-4.5-21b-a3b",
+        "tokenizer_family": "ernie4_5",
+        "size": "21B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "liquid/lfm2-1.2b",
+        "tokenizer_family": "lfm2",
+        "size": "1.2B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "mistralai/mistral-small-3.2",
+        "tokenizer_family": "mistral",
+        "size": "24B",
+        "context": "128K"
+    },
+    {
+        "parent_model": "google/gemma-3n-e4b",
+        "tokenizer_family": "gemma3n",
+        "size": "6.9B",
+        "context": "32K"
+    },
+    {
+        "parent_model": "qwen/qwen3-235b-a22b-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "235B",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-coder-480b",
+        "tokenizer_family": "qwen3_moe",
+        "size": "480B",
+        "context": "256K"
+    }
+]

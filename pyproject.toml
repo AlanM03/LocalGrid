@@ -28,8 +28,13 @@ dependencies = [
 dev = [
     "ruff",
     "pytest",
+    "pytest-asyncio",
     "pytest-mock",
+    "anyio",
 ]
+
+[tool.setuptools]
+package-data = { "localgrid" = ["tokenizers/**/*", "data/localgrid_cache.json"] }
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -38,4 +43,4 @@ where = ["src"]
 minversion = "8.0"
 testpaths = ["tests"]
 addopts = "-ra"
-
+asyncio_mode = "auto"
