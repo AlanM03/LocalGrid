@@ -28,6 +28,7 @@ dependencies = [
 dev = [
     "ruff",
     "pytest",
+    "pytest-asyncio",
     "pytest-mock",
 ]
 
