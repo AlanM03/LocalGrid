@@ -78,14 +78,14 @@ TOKENIZER_CONSOLIDATION_MAP = {
     
     # Remaining base tokenizers (1-2 families each)
     'dbrx': 'dbrx',
-    'glm4': 'glm4',
+    'glm4': 'glm', 'glm': 'glm', 'glm-4.6': 'glm',
     'nemotron': 'nemotron', 'nemotron-mini': 'nemotron',
     'smollm': 'smollm', 'smollm2': 'smollm',
     'olmo2': 'olmo', 'olmo': 'olmo', 
     'internlm2': 'internlm', 'internlm': 'internlm',
     'exaone3.5': 'exaone', 'exaone-deep': 'exaone', 'exaone': 'exaone',
     'aya': 'aya', 'aya-expanse': 'aya',
-    'codegeex4': 'glm4', 'codegeex': 'glm4',
+    'codegeex4': 'glm', 'codegeex': 'glm',
     'minicpm-v': 'minicpm', 'minicpm': 'minicpm',
     
     # Embedding models
