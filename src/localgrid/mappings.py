@@ -78,7 +78,7 @@ TOKENIZER_CONSOLIDATION_MAP = {
     
     # Remaining base tokenizers (1-2 families each)
     'dbrx': 'dbrx',
-    'glm4': 'glm4', 'glm': 'glm',
+    'glm4': 'glm4', 'glm': 'glm', 'glm-4.6': 'glm',
     'nemotron': 'nemotron', 'nemotron-mini': 'nemotron',
     'smollm': 'smollm', 'smollm2': 'smollm',
     'olmo2': 'olmo', 'olmo': 'olmo', 
