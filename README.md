@@ -4,6 +4,8 @@ A simple Python library to inspect and get metadata for local LLMs, like token l
 
 I built this because I needed a way to get accurate info for local models without having to make any web calls. All the data and tokenizers are bundled directly into the package.
 
+#### [localgrid on PyPI](https://pypi.org/project/localgrid/)
+
 ## Key Features
 
 * **Fully Local:** No internet connection needed after installation.
