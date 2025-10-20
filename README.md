@@ -78,7 +78,7 @@ async def main():
     await preload_tokenizers()
     
     # Or just preload specific ones
-    await localgrid.preload_tokenizers(families=["llama", "gemma"])
+    await preload_tokenizers(families=["llama", "gemma"])
 
 if __name__ == "__main__":
     asyncio.run(main())
