@@ -32,9 +32,8 @@ MANIFEST
 *.manifest
 *.spec
 
-src/localgrid/build_cache.py
-src/localgrid/families.py
-src/localgrid/later.txt
+# Local helper scripts
+scripts/
 
 # Installer logs
 pip-log.txt
