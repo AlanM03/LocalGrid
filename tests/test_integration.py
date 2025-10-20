@@ -38,7 +38,7 @@ def test_all_models_in_cache_are_valid(real_model_cache):
 
     for model_name, model_data in real_model_cache.items():
         
-        limit_val = localgrid.limit(model=model_name)
+        limit_val = localgrid.get_context_limit(model=model_name)
         if not (limit_val > 0):
             validation_errors.append(f"Model {model_name}: Invalid limit: {limit_val}")
 
@@ -65,7 +65,7 @@ def test_all_models_in_cache_are_valid(real_model_cache):
 async def test_async_preload_all_tokenizers():
     localgrid.core._tokenizer_cache = {}
 
-    await localgrid.preload()
+    await localgrid.preload_tokenizers()
     
     assert len(localgrid.core._tokenizer_cache) == len(BASE_TOKENIZERS)
     

@@ -4,7 +4,7 @@ import tiktoken
 from unittest.mock import MagicMock
 
 import localgrid
-from localgrid import limit, count, preload
+from localgrid import get_context_limit, count_tokens, preload_tokenizers
 from localgrid.core import (
     _default_tokenizer,
     FALLBACK_TOKEN_RATIO,
@@ -80,7 +80,7 @@ def mock_hf_tokenizer_loader(mocker):
     ("model-float-k", 8704),
 ])
 def test_limit_function_parses_context_values_correctly(model_name, expected_limit):
-    assert limit(model=model_name) == expected_limit
+    assert get_context_limit(model=model_name) == expected_limit
 
 
 @pytest.mark.parametrize("model_name, text, expected_count, expected_tokenizer_family", [
@@ -96,7 +96,7 @@ def test_count_uses_correct_hf_tokenizer_when_available(
     expected_count,
     expected_tokenizer_family
 ):
-    token_count = count(text=text, model=model_name)
+    token_count = count_tokens(text=text, model=model_name)
 
     assert token_count == expected_count
 
@@ -112,7 +112,7 @@ def test_count_falls_back_to_tiktoken_if_hf_fails(mocker):
 
     tiktoken_encode_spy = mocker.spy(localgrid.core._default_tokenizer, 'encode')
 
-    token_count = count(text="hello world", model="llama4:latest")
+    token_count = count_tokens(text="hello world", model="llama4:latest")
 
     assert token_count == 2
     tiktoken_encode_spy.assert_called_once_with("hello world", disallowed_special=())
@@ -123,15 +123,15 @@ def test_count_falls_back_to_ratio_if_all_tokenizers_fail(mocker):
     mocker.patch('localgrid.core._default_tokenizer', None)
 
     text = "This is a fallback test."
-    token_count = count(text=text, model="llama4:latest")
+    token_count = count_tokens(text=text, model="llama4:latest")
 
     expected_count = len(text) // FALLBACK_TOKEN_RATIO
     assert token_count == expected_count
 
 
 def test_tokenizer_is_cached_after_first_load(mock_hf_tokenizer_loader):
-    count("text 1", model="google/gemma-3n-e4b")
-    count("text 2", model="granite3.1-moe:latest")
+    count_tokens("text 1", model="google/gemma-3n-e4b")
+    count_tokens("text 2", model="granite3.1-moe:latest")
 
     mock_hf_tokenizer_loader.assert_called_once()
 
@@ -144,7 +144,7 @@ async def test_preload_loads_specified_families(mocker):
     mocker.patch('os.path.isdir', return_value=True)
 
     families_to_load = ['llama', 'gemma', 'phi']
-    await preload(families=families_to_load)
+    await preload_tokenizers(families=families_to_load)
 
     assert disk_load_spy.call_count == len(families_to_load)
     loaded_families = {call[0][0] for call in disk_load_spy.call_args_list}
@@ -158,7 +158,7 @@ async def test_preload_loads_all_families_by_default(mocker):
     mocker.patch('transformers.AutoTokenizer.from_pretrained', return_value=MagicMock())
     mocker.patch('os.path.isdir', return_value=True)
 
-    await preload()
+    await preload_tokenizers()
 
     assert disk_load_spy.call_count == len(BASE_TOKENIZERS)
     loaded_families = {call[0][0] for call in disk_load_spy.call_args_list}

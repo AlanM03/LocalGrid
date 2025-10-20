@@ -1,6 +1,6 @@
 """
 This file contains the master TOKENIZER_CONSOLIDATION_MAP.
-It maps ~193 raw tokenizer family names to ~25 standardized base tokenizer names.
+It maps raw tokenizer family names to ~25 standardized base tokenizer names.
 This allows the LocalGrid package to support thousands of models while only needing
 to bundle a small number of base tokenizer files.
 """

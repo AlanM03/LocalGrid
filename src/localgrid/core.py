@@ -62,7 +62,7 @@ def _load_tokenizer_from_disk(tokenizer_dir_name: str):
     return None
 
 
-async def preload(families: list = None):
+async def preload_tokenizers(families: list = None):
     """Asynchronously pre-loads tokenizers into the cache."""
     _load_cache()
     
@@ -105,7 +105,7 @@ def _get_tokenizer(model_name: str):
     return _default_tokenizer
 
 
-def count(text: str, model: str) -> int:
+def count_tokens(text: str, model: str) -> int:
     """Provides an accurate token count for a given model and text."""
     tokenizer = _get_tokenizer(model)
     
@@ -119,7 +119,7 @@ def count(text: str, model: str) -> int:
     return len(text) // FALLBACK_TOKEN_RATIO
 
 
-def limit(model: str) -> int:
+def get_context_limit(model: str) -> int:
     """Gets the context size (token limit) for a given model."""
     models = _load_cache()
     model_data = models.get(model)
@@ -164,10 +164,3 @@ def limit(model: str) -> int:
             pass 
     
     return DEFAULT_TOKEN_LIMIT
-
-
-def usage(text: str, model: str) -> str:
-    """Returns a string showing used tokens vs. the model's total limit."""
-    model_limit = limit(model)
-    current_tokens = count(text, model)
-    return f'{current_tokens} / {model_limit}'
