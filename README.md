@@ -15,6 +15,10 @@ I built this because I needed a way to get accurate info for local models withou
 
 The model data (like context limits) was gathered by scraping and formatting information from Ollama and lm-studios public model library's. This data is saved in a JSON file (`localgrid_cache.json`) inside the package.
 
+[view the models](https://local-grid-hub.vercel.app/)
+
+or just visit [ollama](https://ollama.com/search) and [lm-studio](https://lmstudio.ai/models)
+
 ## Installation
 
 ```bash
