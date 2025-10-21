@@ -6,6 +6,8 @@ I built this because I needed a way to get accurate info for local models withou
 
 #### [localgrid on PyPI](https://pypi.org/project/localgrid/)
 
+> *Supports Python >=3.8*
+
 ## Key Features
 
 * **Fully Local:** No internet connection needed after installation.
@@ -86,7 +88,7 @@ if __name__ == "__main__":
 
 ## Licensing & Included Tokenizers
 
-All included tokenizer files are bundled with their original licenses (e.g., `LICENSE` and `tokenizer_config.json`). You can find these within the installed package.
+All included tokenizer files are bundled with their original licenses (ex: `LICENSE` and `tokenizer_config.json`). You can find these within the installed package.
 
 **Note:** Due to licensing restrictions, the following tokenizer families are **not** included in this package:
 
