@@ -1,51 +1,75 @@
 [
     {
-        "parent_model": "google/gemma-3-12b",
-        "tokenizer_family": "gemma3",
-        "size": "11GB",
-        "context": "4K"
-    },
-    {
-        "parent_model": "google/gemma-3n-e4b",
-        "tokenizer_family": "gemma3n",
-        "size": "4GB",
-        "context": "32K"
-    },
-    {
-        "parent_model": "liquid/lfm2-1.2b",
-        "tokenizer_family": "lfm2",
-        "size": "700MB",
-        "context": "32K"
-    },
-    {
-        "parent_model": "mistralai/magistral-small",
+        "parent_model": "mistralai/codestral-22b-v0.1",
         "tokenizer_family": "mistral",
-        "size": "19GB",
-        "context": "49K"
+        "size": "12.7GB",
+        "context": "32K"
     },
     {
-        "parent_model": "qwen/qwq-32b",
-        "tokenizer_family": "qwen2",
+        "parent_model": "mistralai/mistral-7b-instruct-v0.3",
+        "tokenizer_family": "mistral",
+        "size": "4.1GB",
+        "context": "32K"
+    },
+    {
+        "parent_model": "allenai/olmo-3-7b-think",
+        "tokenizer_family": "olmo3",
+        "size": "6GB",
+        "context": "65K"
+    },
+    {
+        "parent_model": "allenai/olmo-3-7b",
+        "tokenizer_family": "olmo3",
+        "size": "6GB",
+        "context": "65K"
+    },
+    {
+        "parent_model": "allenai/olmo-3-32b-think",
+        "tokenizer_family": "olmo3",
         "size": "19GB",
-        "context": "40K"
+        "context": "65K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-reasoning-plus",
+        "tokenizer_family": "phi",
+        "size": "8GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-reasoning",
+        "tokenizer_family": "phi",
+        "size": "8GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "qwen/qwen2.5-vl-72b",
+        "tokenizer_family": "qwen2vl",
+        "size": "47GB",
+        "context": "128K"
+    },
+    {
+        "parent_model": "mistralai/devstral-small-2505",
+        "tokenizer_family": "mistral",
+        "size": "19.15GB",
+        "context": "131K"
     },
     {
         "parent_model": "mistralai/devstral-small-2507",
         "tokenizer_family": "mistral",
-        "size": "15GB",
+        "size": "14.5GB",
         "context": "131K"
     },
     {
-        "parent_model": "deepseek/deepseek-r1-0528-qwen3-8b",
-        "tokenizer_family": "qwen3",
-        "size": "4GB",
-        "context": "131K"
+        "parent_model": "qwen/qwen2.5-vl-32b",
+        "tokenizer_family": "qwen2vl",
+        "size": "19.35GB",
+        "context": "128K"
     },
     {
-        "parent_model": "qwen/qwen3-vl-8b",
-        "tokenizer_family": "qwen3_vl",
-        "size": "6GB",
-        "context": "256K"
+        "parent_model": "google/gemma-3n-e4b",
+        "tokenizer_family": "gemma3n",
+        "size": "4.24GB",
+        "context": "32K"
     },
     {
         "parent_model": "baidu/ernie-4.5-21b-a3b",
@@ -60,214 +84,238 @@
         "context": "262K"
     },
     {
-        "parent_model": "qwen/qwen3-30b-a3b-2507",
-        "tokenizer_family": "qwen3moe",
-        "size": "17GB",
-        "context": "262K"
-    },
-    {
-        "parent_model": "qwen/qwen3-235b-a22b-2507",
-        "tokenizer_family": "qwen3moe",
-        "size": "134GB",
-        "context": "262K"
-    },
-    {
-        "parent_model": "mistralai/mistral-small-3.2",
-        "tokenizer_family": "mistral",
-        "size": "14GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "openai/gpt-oss-120b",
-        "tokenizer_family": "gpt-oss",
-        "size": "65GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "nousresearch/hermes-4-70b",
-        "tokenizer_family": "llama",
-        "size": "40GB",
-        "context": "131K"
-    },
-    {
         "parent_model": "qwen/qwen3-coder-480b",
         "tokenizer_family": "qwen3_moe",
         "size": "250GB",
         "context": "262K"
     },
     {
-        "parent_model": "google/gemma-3-1b",
-        "tokenizer_family": "gemma3",
-        "size": "755MB",
+        "parent_model": "qwen/qwen3-30b-a3b-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "17.4GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-120b",
+        "tokenizer_family": "gpt",
+        "size": "65GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "qwen/qwen3-235b-a22b-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "134.3GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "qwen/qwen3-30b-a3b-thinking-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "17.4GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "qwen/qwen3-235b-a22b-thinking-2507",
+        "tokenizer_family": "qwen3moe",
+        "size": "134.3GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b-thinking-2507",
+        "tokenizer_family": "qwen3",
+        "size": "2.3GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-20b",
+        "tokenizer_family": "gpt",
+        "size": "12GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "liquid/lfm2-1.2b",
+        "tokenizer_family": "lfm2",
+        "size": "700MB",
         "context": "32K"
     },
     {
-        "parent_model": "google/gemma-3-27b",
-        "tokenizer_family": "gemma3",
-        "size": "16GB",
+        "parent_model": "google/gemma-3n-e2b",
+        "tokenizer_family": "gemma3n",
+        "size": "2.95GB",
+        "context": "32K"
+    },
+    {
+        "parent_model": "liquid/lfm2-700m",
+        "tokenizer_family": "lfm2",
+        "size": "450MB",
+        "context": "32K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b-2507",
+        "tokenizer_family": "qwen3",
+        "size": "2.3GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "liquid/lfm2-350m",
+        "tokenizer_family": "lfm2",
+        "size": "220MB",
+        "context": "32K"
+    },
+    {
+        "parent_model": "mistralai/mistral-small-3.2",
+        "tokenizer_family": "mistral",
+        "size": "14.3GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "mistralai/magistral-small-2509",
+        "tokenizer_family": "mistral",
+        "size": "15.35GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "mistralai/magistral-small",
+        "tokenizer_family": "mistral",
+        "size": "19.15GB",
+        "context": "49K"
+    },
+    {
+        "parent_model": "qwen/qwen2.5-vl-3b",
+        "tokenizer_family": "qwen2vl",
+        "size": "2.15GB",
         "context": "128K"
     },
     {
-        "parent_model": "microsoft/phi-4-reasoning-plus",
-        "tokenizer_family": "phi-4",
-        "size": "8GB",
+        "parent_model": "mistralai/mistral-nemo-instruct-2407",
+        "tokenizer_family": "mistral",
+        "size": "6.9GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-mini-reasoning",
+        "tokenizer_family": "phi",
+        "size": "3GB",
         "context": "131K"
     },
     {
         "parent_model": "qwen/qwen2.5-vl-7b",
         "tokenizer_family": "qwen2vl",
-        "size": "5GB",
+        "size": "5.37GB",
         "context": "128K"
     },
     {
-        "parent_model": "mistralai/devstral-small-2505",
-        "tokenizer_family": "mistral",
-        "size": "19GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "microsoft/phi-4-mini-reasoning",
-        "tokenizer_family": "phi-4",
-        "size": "3GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "google/gemma-2-9b",
-        "tokenizer_family": "gemma2",
-        "size": "5GB",
-        "context": "8K"
-    },
-    {
-        "parent_model": "google/gemma-2-27b",
-        "tokenizer_family": "gemma2",
-        "size": "16GB",
-        "context": "8K"
-    },
-    {
-        "parent_model": "google/gemma-3-4b",
+        "parent_model": "google/gemma-3-1b",
         "tokenizer_family": "gemma3",
-        "size": "2GB",
-        "context": "4K"
-    },
-    {
-        "parent_model": "ibm/granite-3.1-8b",
-        "tokenizer_family": "granite",
-        "size": "5GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "mistralai/mistral-7b-instruct-v0.3",
-        "tokenizer_family": "mistral",
-        "size": "4GB",
+        "size": "754.97MB",
         "context": "32K"
     },
     {
-        "parent_model": "microsoft/phi-4",
-        "tokenizer_family": "phi",
-        "size": "8GB",
-        "context": "16K"
+        "parent_model": "google/gemma-3-27b",
+        "tokenizer_family": "gemma3",
+        "size": "15.6GB",
+        "context": "128K"
     },
     {
-        "parent_model": "mistralai/mistral-nemo-instruct-2407",
-        "tokenizer_family": "mistral",
-        "size": "7GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "mistralai/codestral-22b-v0.1",
-        "tokenizer_family": "mistral",
-        "size": "13GB",
+        "parent_model": "google/gemma-3-270m",
+        "tokenizer_family": "gemma3",
+        "size": "550MB",
         "context": "32K"
-    },
-    {
-        "parent_model": "ibm/granite-3.2-8b",
-        "tokenizer_family": "granite",
-        "size": "5GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "meta/llama-3.3-70b",
-        "tokenizer_family": "llama",
-        "size": "40GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "qwen/qwen2.5-coder-32b",
-        "tokenizer_family": "qwen2",
-        "size": "19GB",
-        "context": "32K"
-    },
-    {
-        "parent_model": "qwen/qwen3-14b",
-        "tokenizer_family": "qwen3",
-        "size": "8GB",
-        "context": "40K"
     },
     {
         "parent_model": "qwen/qwen3-235b-a22b",
         "tokenizer_family": "qwen3moe",
-        "size": "134GB",
+        "size": "134.3GB",
         "context": "40K"
     },
     {
-        "parent_model": "qwen/qwen3-1.7b",
+        "parent_model": "qwen/qwen3-14b",
         "tokenizer_family": "qwen3",
-        "size": "1GB",
+        "size": "8.4GB",
         "context": "40K"
     },
     {
         "parent_model": "qwen/qwen3-32b",
         "tokenizer_family": "qwen3",
-        "size": "19GB",
+        "size": "18.7GB",
         "context": "40K"
-    },
-    {
-        "parent_model": "qwen/qwen2.5-coder-14b",
-        "tokenizer_family": "qwen2",
-        "size": "8GB",
-        "context": "32K"
-    },
-    {
-        "parent_model": "qwen/qwen3-30b-a3b",
-        "tokenizer_family": "qwen3moe",
-        "size": "17GB",
-        "context": "40K"
-    },
-    {
-        "parent_model": "qwen/qwen3-4b",
-        "tokenizer_family": "qwen3",
-        "size": "2GB",
-        "context": "40K"
-    },
-    {
-        "parent_model": "mistralai/magistral-small-2509",
-        "tokenizer_family": "mistral",
-        "size": "15GB",
-        "context": "131K"
-    },
-    {
-        "parent_model": "openai/gpt-oss-20b",
-        "tokenizer_family": "gpt-oss",
-        "size": "12GB",
-        "context": "131K"
     },
     {
         "parent_model": "qwen/qwen3-8b",
         "tokenizer_family": "qwen3",
-        "size": "5GB",
+        "size": "4.6GB",
         "context": "40K"
     },
     {
-        "parent_model": "qwen/qwen3-4b-2507",
-        "tokenizer_family": "qwen3",
-        "size": "2GB",
-        "context": "262K"
+        "parent_model": "qwen/qwen3-30b-a3b",
+        "tokenizer_family": "qwen3moe",
+        "size": "17.4GB",
+        "context": "40K"
     },
     {
-        "parent_model": "qwen/qwen3-next-80b",
-        "tokenizer_family": "qwen3_next",
-        "size": "42GB",
-        "context": "262K"
+        "parent_model": "deepseek/deepseek-r1-distill-qwen-14b",
+        "tokenizer_family": "qwen2",
+        "size": "8.4GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-distill-qwen-32b",
+        "tokenizer_family": "qwen2",
+        "size": "18.7GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-distill-llama-70b",
+        "tokenizer_family": "llama",
+        "size": "40.3GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "qwen/qwen3-4b",
+        "tokenizer_family": "qwen3",
+        "size": "2.2GB",
+        "context": "40K"
+    },
+    {
+        "parent_model": "google/gemma-3-12b",
+        "tokenizer_family": "gemma3",
+        "size": "10.74GB",
+        "context": "4K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-distill-qwen-7b",
+        "tokenizer_family": "qwen2",
+        "size": "4.3GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-0528-qwen3-8b",
+        "tokenizer_family": "qwen3",
+        "size": "4.3GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "microsoft/phi-4-mini",
+        "tokenizer_family": "phi",
+        "size": "2.1GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "microsoft/phi-4",
+        "tokenizer_family": "phi",
+        "size": "8.3GB",
+        "context": "16K"
+    },
+    {
+        "parent_model": "deepseek/deepseek-r1-distill-llama-8b",
+        "tokenizer_family": "llama",
+        "size": "4.5GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "google/gemma-3-4b",
+        "tokenizer_family": "gemma3",
+        "size": "2.4GB",
+        "context": "4K"
     },
     {
         "parent_model": "bytedance/seed-oss-36b",
@@ -276,16 +324,76 @@
         "context": "524K"
     },
     {
-        "parent_model": "ibm/granite-4-h-tiny",
-        "tokenizer_family": "granitehybrid",
-        "size": "5GB",
+        "parent_model": "qwen/qwen3-next-80b",
+        "tokenizer_family": "qwen3_next",
+        "size": "42GB",
+        "context": "262K"
+    },
+    {
+        "parent_model": "ibm/granite-4-micro",
+        "tokenizer_family": "granite",
+        "size": "2.25GB",
         "context": "131K"
     },
     {
-        "parent_model": "qwen/qwen3-4b-thinking-2507",
-        "tokenizer_family": "qwen3",
-        "size": "2GB",
-        "context": "262K"
+        "parent_model": "ibm/granite-4-h-tiny",
+        "tokenizer_family": "granitehybrid",
+        "size": "4.54GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-safeguard-120b",
+        "tokenizer_family": "gpt",
+        "size": "65GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "ibm/granite-4-h-small",
+        "tokenizer_family": "granitehybrid",
+        "size": "20.94GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "ibm/granite-4-h-micro",
+        "tokenizer_family": "granitehybrid",
+        "size": "2.08GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "openai/gpt-oss-safeguard-20b",
+        "tokenizer_family": "gpt",
+        "size": "12GB",
+        "context": "131K"
+    },
+    {
+        "parent_model": "allenai/olmocr-2-7b",
+        "tokenizer_family": "qwen2vl",
+        "size": "4.7GB",
+        "context": "128K"
+    },
+    {
+        "parent_model": "minimax/minimax-m2",
+        "tokenizer_family": "minimax",
+        "size": "121GB",
+        "context": "128K"
+    },
+    {
+        "parent_model": "qwen/qwen3-vl-32b",
+        "tokenizer_family": "qwen3_vl",
+        "size": "20GB",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-vl-8b",
+        "tokenizer_family": "qwen3_vl",
+        "size": "6GB",
+        "context": "256K"
+    },
+    {
+        "parent_model": "qwen/qwen3-vl-2b",
+        "tokenizer_family": "qwen3_vl",
+        "size": "3GB",
+        "context": "256K"
     },
     {
         "parent_model": "qwen/qwen3-vl-4b",
@@ -296,7 +404,7 @@
     {
         "parent_model": "qwen/qwen3-vl-30b",
         "tokenizer_family": "qwen3_vl_moe",
-        "size": "18GB",
+        "size": "18.4GB",
         "context": "256K"
     }
 ]
