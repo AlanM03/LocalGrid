@@ -5,6 +5,7 @@ This allows the LocalGrid package to support thousands of models while only need
 to bundle a small number of base tokenizer files.
 """
 
+
 TOKENIZER_CONSOLIDATION_MAP = {
     # LLaMA Family (covers ~68 model families)
     'llama': 'llama', 'llama2': 'llama', 'llama3': 'llama', 'llama3.1': 'llama',
@@ -28,7 +29,7 @@ TOKENIZER_CONSOLIDATION_MAP = {
     'nexusraven': 'llama', 'athene-v2': 'llama', 'r1-1776': 'llama',
     'reflection': 'llama', 'cogito': 'llama', 'deepscaler': 'llama', 'firefunction-v2': 'llama',
     'lfm2': 'llama',
-    
+
     # Mistral/Mixtral Family (covers ~21 model families)
     'mistral': 'mistral', 'mixtral': 'mistral', 'mistral-small': 'mistral',
     'mistral-small3.1': 'mistral', 'mistral-small3.2': 'mistral', 'mistral-large': 'mistral',
@@ -37,7 +38,7 @@ TOKENIZER_CONSOLIDATION_MAP = {
     'magistral': 'mistral', 'yarn-mistral': 'mistral', 'zephyr': 'mistral',
     'stablelm-zephyr': 'mistral', 'notus': 'mistral', 'notux': 'mistral',
     'dolphin-mistral': 'mistral', 'dolphin-mixtral': 'mistral', 'nous-hermes2-mixtral': 'mistral',
-    
+
     # Qwen Family (covers ~22 model families)
     'qwen': 'qwen', 'qwen2': 'qwen', 'qwen2.5': 'qwen', 'qwen2.5-coder': 'qwen',
     'qwen2-math': 'qwen', 'qwen2vl': 'qwen', 'qwen2.5vl': 'qwen',
@@ -45,7 +46,9 @@ TOKENIZER_CONSOLIDATION_MAP = {
     'qwen3-coder': 'qwen', 'qwen3-embedding': 'qwen', 'codeqwen': 'qwen', 'qwq': 'qwen',
     'openthinker': 'qwen', 'sailor2': 'qwen', 'marco-o1': 'qwen', 'codeup': 'qwen',
     'reader-lm': 'qwen', 'smallthinker': 'qwen', 'opencoder': 'qwen',
-    
+    # Newly added Qwen 3 vision variants
+    'qwen3_vl': 'qwen', 'qwen3_vl_moe': 'qwen', 'qwen3-vl': 'qwen',
+
     # Gemma Family (includes Granite - covers ~20 model families)
     'gemma': 'gemma', 'gemma2': 'gemma', 'gemma3': 'gemma', 'gemma3n': 'gemma',
     'codegemma': 'gemma', 'embeddinggemma': 'gemma', 'shieldgemma': 'gemma',
@@ -53,41 +56,43 @@ TOKENIZER_CONSOLIDATION_MAP = {
     'granite3.2': 'gemma', 'granite3.3': 'gemma', 'granite3-guardian': 'gemma',
     'granite3-moe': 'gemma', 'granite3.1-dense': 'gemma', 'granite3-dense': 'gemma',
     'granite3.2-vision': 'gemma', 'granite-code': 'gemma', 'granite-embedding': 'gemma',
-    'granite4': 'gemma',
-    
+    'granite4': 'gemma', 'gemini-3-pro-preview': 'gemma',
+
     # Phi Family (covers ~11 model families)
     'phi': 'phi', 'phi-4': 'phi', 'phi3': 'phi', 'phi3.5': 'phi', 'phi4': 'phi',
     'phi4-mini': 'phi', 'phi4-mini-reasoning': 'phi', 'phi4-reasoning': 'phi',
     'dolphin-phi': 'phi', 'nuextract': 'phi', 'bespoke-minicheck': 'phi',
-    
+
     # Falcon Family (covers 3 model families)
     'falcon': 'falcon', 'falcon2': 'falcon', 'falcon3': 'falcon',
-    
+
     # StarCoder Family (covers 4 model families)
     'starcoder': 'starcoder', 'starcoder2': 'starcoder', 'dolphincoder': 'starcoder',
     'sqlcoder': 'starcoder',
-    
+
     # DeepSeek Family (covers 9 model families)
     'deepseek-coder': 'deepseek', 'deepseek-coder-v2': 'deepseek',
     'deepseek-v2': 'deepseek', 'deepseek-v2.5': 'deepseek', 'deepseek-v3': 'deepseek',
     'deepseek-v3.1': 'deepseek', 'deepseek-llm': 'deepseek', 'deepseek-r1': 'deepseek',
-    'deepcoder': 'deepseek',
-    
+    'deepcoder': 'deepseek', 'deepseek-ocr': 'deepseek', 'deepseek': 'deepseek',
+
     # Yi Family (covers 2 model families)
     'yi': 'yi', 'yi-coder': 'yi',
-    
+
     # Remaining base tokenizers (1-2 families each)
     'dbrx': 'dbrx',
     'glm4': 'glm', 'glm': 'glm', 'glm-4.6': 'glm',
     'nemotron': 'nemotron', 'nemotron-mini': 'nemotron',
     'smollm': 'smollm', 'smollm2': 'smollm',
-    'olmo2': 'olmo', 'olmo': 'olmo', 
+    'olmo2': 'olmo', 'olmo': 'olmo',
+    # Newly added olmo3 variant
+    'olmo3': 'olmo',
     'internlm2': 'internlm', 'internlm': 'internlm',
     'exaone3.5': 'exaone', 'exaone-deep': 'exaone', 'exaone': 'exaone',
     'aya': 'aya', 'aya-expanse': 'aya',
     'codegeex4': 'glm', 'codegeex': 'glm',
     'minicpm-v': 'minicpm', 'minicpm': 'minicpm',
-    
+
     # Embedding models
     'nomic-embed-text': 'nomic-embed', 'nomic-embed': 'nomic-embed',
     'all-minilm': 'all-minilm',
@@ -95,7 +100,7 @@ TOKENIZER_CONSOLIDATION_MAP = {
     'mxbai-embed-large': 'mxbai', 'mxbai': 'mxbai',
     'snowflake-arctic-embed': 'snowflake-arctic', 'snowflake-arctic-embed2': 'snowflake-arctic', 'snowflake-arctic': 'snowflake-arctic',
     'paraphrase-multilingual': 'sentence-transformers', 'sentence-transformers': 'sentence-transformers',
-    
+
     # Special cases
     'ernie4_5': 'ernie', 'ernie': 'ernie',
 }
